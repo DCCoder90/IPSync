@@ -1,5 +1,4 @@
 .env
 .dockerignore
 current_ip.txt
-go.sum
 .idea
