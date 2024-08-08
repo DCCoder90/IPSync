@@ -27,5 +27,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-app:${{ github.ref_name }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/ipsync:${{ github.ref_name }}
 
