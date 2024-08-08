@@ -13,7 +13,7 @@ RUN go build -o main .
 # Start a new stage from scratch
 FROM alpine:latest
 
-RUN apk --no-cache add ca-certificates tzdata bash curl nano git cron
+RUN apk update && apk --no-cache add ca-certificates tzdata bash curl nano git cron
 
 COPY --from=builder /app/main /usr/local/bin/main
 COPY crontab /etc/crontabs/root
